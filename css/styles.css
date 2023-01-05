@@ -825,8 +825,6 @@ color: var(--bold-color);
 .checkbox:checked + .checkbox-icon {
     border-color: var(--background-active-order-service);
     background-color: var(--background-active-order-service);
-    background-size: contain;
-    background-origin: border-box;
 }
 
 .checkbox ~.checkbox-icon>.tick {
