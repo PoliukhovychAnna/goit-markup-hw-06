@@ -637,6 +637,7 @@ margin-right: 24px;
    position: absolute;
    top: 8px;
    right: 24px;
+   cursor: pointer;
 }
 
 /****************************************** MODAL WINDOW  **********************************************/
@@ -788,30 +789,54 @@ color: var(--bold-color);
     color: rgba(117, 117, 117, 0.5);
 }
 
+
+
+.checkbox {
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .checkbox-field {
     display: flex;
+    align-items: center;
     margin-top: 16px;
 }
 
-.checkbox {
-    appearance: none;
+.checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+
+    border: 1.25px solid var(--bold-color);
+    border-radius: 2px;
 }
 
-.check {
+
+.checkbox:checked + .checkbox-icon {
+    border-color: var(--background-active-order-service);
+    background-color: var(--background-active-order-service);
+    background-size: contain;
+    background-origin: border-box;
+}
+
+.checkbox ~.checkbox-icon>.tick {
     opacity: 0;
 }
 
-.uncheck {
+.checkbox:checked~.checkbox-icon >.tick {
     opacity: 1;
 }
 
-.checkbox-form-checked-unchecked:checked ~ .checkbox-form-checked-unchecked > .check {
-    opacity: 1;
-}
-
-.checkbox-form-checked-unchecked:checked ~ .checkbox-form-checked-unchecked > .uncheck {
-    opacity: 0;
-}
 
 .policy-text {
     font-size: 12px;
