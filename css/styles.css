@@ -591,6 +591,7 @@ margin-bottom: 16px;
 .subscribe-input {
 width: 264px;
 height: 40px;
+color: var(--main-white);
 background-color: transparent;
 padding: 8px 16px;
 border: 1px solid rgba(255, 255, 255, 0.3);
@@ -619,6 +620,7 @@ margin-right: 24px;
     line-height: calc(24/16);
 
     display: flex;
+    justify-content: space-between;
     align-items: center;
     letter-spacing: 0.04em;
     color: var(--main-white);
@@ -629,15 +631,9 @@ margin-right: 24px;
         background-color: var(--background-active-order-service);
     }
 
-.subscribe-button-icon {
-    position: relative;
-}
 
 .subscribe-icon {
-   position: absolute;
-   top: 8px;
-   right: 24px;
-   cursor: pointer;
+
 }
 
 /****************************************** MODAL WINDOW  **********************************************/
@@ -668,7 +664,7 @@ margin-right: 24px;
     position: absolute;
     width: 408px;
     height: 584px;
-    padding: 0 24px 24px 24px;
+    padding: 72px 24px 24px 24px;
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
@@ -715,7 +711,6 @@ margin-right: 24px;
 }
 
 .modal-text {
-margin-top: 72px;
 margin-bottom: 14px;
 font-weight: 700;
 font-size: 16px;
